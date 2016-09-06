@@ -8,7 +8,339 @@
       <url>http://jiangjingmin.github.io/2016/09/05/Sublime%20Text%203%20%E5%BC%80%E5%8F%91%E7%A7%98%E7%B1%8D/</url>
       <content type="html"><![CDATA[<p><excerpt in="" index=""><br><a id="more"></a></excerpt></p>
 <p><the rest="" of="" contents=""></the></p>
-<h2 id="description-“sublime-text-3开发秘籍”"><a href="#description-“sublime-text-3开发秘籍”" class="headerlink" title="+description: “sublime-text-3开发秘籍”"></a>+description: “sublime-text-3开发秘籍”</h2><p><contents></contents></p>
+<h2 id="“sublime-text-3开发秘籍”"><a href="#“sublime-text-3开发秘籍”" class="headerlink" title="“sublime-text-3开发秘籍”"></a>“sublime-text-3开发秘籍”</h2><p><contents></contents></p>
+<h4 id="一、标准安装"><a href="#一、标准安装" class="headerlink" title="一、标准安装"></a>一、标准安装</h4><ul>
+<li><p>注册码<br><a href="http://9iphp.com/web/html/sublime-text-3-license-key.html" target="_blank" rel="external">Sublime Text (3103版本可用) 注册码 License Key</a><br>这里的注册码比较齐全，建议你看看你装的是什么版本，然后找对应的。下面是我使用成功的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">—– BEGIN LICENSE —–</div><div class="line">Michael Barnes</div><div class="line">Single User License</div><div class="line">EA7E-821385</div><div class="line">8A353C41 872A0D5C DF9B2950 AFF6F667</div><div class="line">C458EA6D 8EA3C286 98D1D650 131A97AB</div><div class="line">AA919AEC EF20E143 B361B1E7 4C8B7F04</div><div class="line">B085E65E 2F5F5360 8489D422 FB8FC1AA</div><div class="line">93F6323C FD7F7544 3F39C318 D95E6480</div><div class="line">FCCC7561 8A4A1741 68FA4223 ADCEDE07</div><div class="line">200C25BE DBBC4855 C4CFB774 C5EC138C</div><div class="line">0FEC1CEF D9DCECEC D3A5DAD1 01316C36</div><div class="line">—— END LICENSE ——</div></pre></td></tr></table></figure>
+</li>
+<li><p>插件安装</p>
+</li>
+</ul>
+<p><a href="http://www.cnblogs.com/Rising/p/3741116.html" target="_blank" rel="external">Sublime Text 3 常用插件以及安装方法(转)</a></p>
+<p>按<strong>ctrl+`</strong><br>输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), &apos;wb&apos;).write(urllib.request.urlopen( &apos;http://sublime.wbond.net/&apos; + pf.replace(&apos; &apos;,&apos;%20&apos;)).read())</div></pre></td></tr></table></figure>
+<ul>
+<li><p>安装插件推荐</p>
+</li>
+<li><p>[ ]  emmet</p>
+</li>
+<li>[ ]  emmet</li>
+<li>[ ]  emmet</li>
+<li>[ ]  emmet</li>
+<li><p>[ ]  emmet</p>
+</li>
+<li><p>[ ] 主题</p>
+</li>
+</ul>
+<p><a href="http://www.07net01.com/2016/02/1268072.html" target="_blank" rel="external">Seti UI 主题: 让你编辑器焕然一新(Sublime, Atom)</a></p>
+<p>用 package Control 安装：Seti_UI</p>
+<p>安装之后启用 Seti UI 主题，在 Preferences -&gt; Settings – User 添加一行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;theme&quot;: &quot;Seti.sublime-theme&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="二、快捷键使用"><a href="#二、快捷键使用" class="headerlink" title="二、快捷键使用"></a>二、快捷键使用</h4><ul>
+<li>选择类</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl+D</td>
+<td>选中光标所占的文本，继续操作则会选中下一个相同的文本（复制）</td>
+</tr>
+<tr>
+<td>Alt+F3</td>
+<td>选中文本按下快捷键，即可一次性选择全部的相同文本进行同时编辑。举个栗子：快速选中并更改所有相同的变量名、函数名等</td>
+</tr>
+<tr>
+<td>Ctrl+L</td>
+<td>选中整行，继续操作则继续选择下一行，效果和 Shift+↓ 效果一样</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+L</td>
+<td>先选中多行，再按下快捷键，会在每行行尾插入光标，即可同时编辑这些行</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+M</td>
+<td>选择括号内的内容（继续选择父括号）。举个栗子：快速选中删除函数中的代码，重写函数体代码或重写括号内里的内容</td>
+</tr>
+<tr>
+<td>Ctrl+M</td>
+<td>光标移动至括号内结束或开始的位置</td>
+</tr>
+<tr>
+<td>Ctrl+Enter</td>
+<td>在下一行插入新行。举个栗子：即使光标不在行尾，也能快速向下插入一行</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+Enter</td>
+<td>在上一行插入新行。举个栗子：即使光标不在行首，也能快速向上插入一行</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+[</td>
+<td>选中代码，按下快捷键，折叠代码</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+]</td>
+<td>选中代码，按下快捷键，展开代码</td>
+</tr>
+<tr>
+<td>Ctrl+K+0</td>
+<td>展开所有折叠代码。</td>
+</tr>
+<tr>
+<td>Ctrl+←</td>
+<td>向左单位性地移动光标，快速移动光标</td>
+</tr>
+<tr>
+<td>Ctrl+→</td>
+<td>向右单位性地移动光标，快速移动光标</td>
+</tr>
+<tr>
+<td>shift+↑</td>
+<td>向上选中多行</td>
+</tr>
+<tr>
+<td>shift+↓</td>
+<td>向下选中多行</td>
+</tr>
+<tr>
+<td>Shift+←</td>
+<td>向左选中文本</td>
+</tr>
+<tr>
+<td>Shift+→</td>
+<td>向右选中文本</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+←</td>
+<td>向左单位性地选中文本</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+→</td>
+<td>向右单位性地选中文本</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+↑</td>
+<td>将光标所在行和上一行代码互换（将光标所在行插入到上一行之前）</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+↓</td>
+<td>将光标所在行和下一行代码互换（将光标所在行插入到下一行之后）</td>
+</tr>
+<tr>
+<td>Ctrl+Alt+↑</td>
+<td>向上添加多行光标，可同时编辑多行</td>
+</tr>
+<tr>
+<td>Ctrl+Alt+↓</td>
+<td>向下添加多行光标，可同时编辑多行</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>编辑类</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl+J</td>
+<td>合并选中的多行代码为一行。举个栗子：将多行格式的CSS属性合并为一行。</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+D</td>
+<td>复制光标所在整行，插入到下一行。</td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>向右缩进。</td>
+</tr>
+<tr>
+<td>Shift+Tab</td>
+<td>向左缩进。</td>
+</tr>
+<tr>
+<td>Ctrl+K+K</td>
+<td>从光标处开始删除代码至行尾。</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+K</td>
+<td>删除整行。</td>
+</tr>
+<tr>
+<td>Ctrl+/</td>
+<td>注释单行。</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+/</td>
+<td>注释多行。</td>
+</tr>
+<tr>
+<td>Ctrl+K+U</td>
+<td>转换大写。</td>
+</tr>
+<tr>
+<td>Ctrl+K+L</td>
+<td>转换小写。</td>
+</tr>
+<tr>
+<td>Ctrl+Z</td>
+<td>撤销。</td>
+</tr>
+<tr>
+<td>Ctrl+Y</td>
+<td>恢复撤销。</td>
+</tr>
+<tr>
+<td>Ctrl+U</td>
+<td>软撤销，感觉和 Gtrl+Z 一样。</td>
+</tr>
+<tr>
+<td>Ctrl+F2</td>
+<td>设置书签</td>
+</tr>
+<tr>
+<td>Ctrl+T</td>
+<td>左右字母互换。</td>
+</tr>
+<tr>
+<td>F6</td>
+<td>单词检测拼写</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>搜索类</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl+F</td>
+<td>打开底部搜索框，查找关键字。</td>
+</tr>
+<tr>
+<td>Ctrl+shift+F</td>
+<td>在文件夹内查找，与普通编辑器不同的地方是sublime允许添加多个文件夹进行查找，略高端，未研究。</td>
+</tr>
+<tr>
+<td>Ctrl+P</td>
+<td>打开搜索框。举个栗子：1、输入当前项目中的文件名，快速搜索文件，2、输入@和关键字，查找文件中函数名，3、输入：和数字，跳转到文件中该行代码，4、输入#和关键字，查找变量名。</td>
+</tr>
+<tr>
+<td>Ctrl+G</td>
+<td>打开搜索框，自动带：，输入数字跳转到该行代码。举个栗子：在页面代码比较长的文件中快速定位。</td>
+</tr>
+<tr>
+<td>Ctrl+R</td>
+<td>打开搜索框，自动带@，输入关键字，查找文件中的函数名。举个栗子：在函数较多的页面快速查找某个函数。</td>
+</tr>
+<tr>
+<td>Ctrl+：</td>
+<td>打开搜索框，自动带#，输入关键字，查找文件中的变量名、属性名等。</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+P</td>
+<td>打开命令框。场景栗子：打开命名框，输入关键字，调用sublime text或插件的功能，例如使用package安装插件。</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>退出光标多行选择，退出搜索框，命令框等。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>显示类</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl+Tab</td>
+<td>按文件浏览过的顺序，切换当前窗口的标签页。</td>
+</tr>
+<tr>
+<td>Ctrl+PageDown</td>
+<td>向左切换当前窗口的标签页。</td>
+</tr>
+<tr>
+<td>Ctrl+PageUp</td>
+<td>向右切换当前窗口的标签页。</td>
+</tr>
+<tr>
+<td>Alt+Shift+1</td>
+<td>窗口分屏，恢复默认1屏（非小键盘的数字）</td>
+</tr>
+<tr>
+<td>Alt+Shift+2</td>
+<td>左右分屏-2列</td>
+</tr>
+<tr>
+<td>Alt+Shift+3</td>
+<td>左右分屏-3列</td>
+</tr>
+<tr>
+<td>Alt+Shift+4</td>
+<td>左右分屏-4列</td>
+</tr>
+<tr>
+<td>Alt+Shift+5</td>
+<td>等分4屏</td>
+</tr>
+<tr>
+<td>Alt+Shift+8</td>
+<td>垂直分屏-2屏</td>
+</tr>
+<tr>
+<td>Alt+Shift+9</td>
+<td>垂直分屏-3屏</td>
+</tr>
+<tr>
+<td>Ctrl+K+B</td>
+<td>开启/关闭侧边栏。</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>全屏模式</td>
+</tr>
+<tr>
+<td>Shift+F11</td>
+<td>免打扰模式</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>补充</li>
+</ul>
+<p>按住shift+鼠标右键在行号上划动，可选择多项</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Sublime Text 3 开发秘籍]]></title>
+      <url>http://jiangjingmin.github.io/2016/09/05/2016/06/Sublime%20Text%203%20%E5%BC%80%E5%8F%91%E7%A7%98%E7%B1%8D/</url>
+      <content type="html"><![CDATA[<p><excerpt in="" index=""><br><a id="more"></a></excerpt></p>
+<p><the rest="" of="" contents=""></the></p>
+<h2 id="“sublime-text-3开发秘籍”"><a href="#“sublime-text-3开发秘籍”" class="headerlink" title="“sublime-text-3开发秘籍”"></a>“sublime-text-3开发秘籍”</h2><p><contents></contents></p>
 <h4 id="一、标准安装"><a href="#一、标准安装" class="headerlink" title="一、标准安装"></a>一、标准安装</h4><ul>
 <li><p>注册码<br><a href="http://9iphp.com/web/html/sublime-text-3-license-key.html" target="_blank" rel="external">Sublime Text (3103版本可用) 注册码 License Key</a><br>这里的注册码比较齐全，建议你看看你装的是什么版本，然后找对应的。下面是我使用成功的。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">—– BEGIN LICENSE —–</div><div class="line">Michael Barnes</div><div class="line">Single User License</div><div class="line">EA7E-821385</div><div class="line">8A353C41 872A0D5C DF9B2950 AFF6F667</div><div class="line">C458EA6D 8EA3C286 98D1D650 131A97AB</div><div class="line">AA919AEC EF20E143 B361B1E7 4C8B7F04</div><div class="line">B085E65E 2F5F5360 8489D422 FB8FC1AA</div><div class="line">93F6323C FD7F7544 3F39C318 D95E6480</div><div class="line">FCCC7561 8A4A1741 68FA4223 ADCEDE07</div><div class="line">200C25BE DBBC4855 C4CFB774 C5EC138C</div><div class="line">0FEC1CEF D9DCECEC D3A5DAD1 01316C36</div><div class="line">—— END LICENSE ——</div></pre></td></tr></table></figure>
