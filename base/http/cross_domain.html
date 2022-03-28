@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>跨域 | 前端档案</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="前端通关宝典">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.e02fc531.css" as="style"><link rel="preload" href="/assets/js/app.a4bb23ea.js" as="script"><link rel="preload" href="/assets/js/2.db7a59af.js" as="script"><link rel="preload" href="/assets/js/36.bba826d5.js" as="script"><link rel="prefetch" href="/assets/js/10.08739f58.js"><link rel="prefetch" href="/assets/js/100.94ebf6c4.js"><link rel="prefetch" href="/assets/js/101.bc6d46f8.js"><link rel="prefetch" href="/assets/js/102.ca2253ae.js"><link rel="prefetch" href="/assets/js/103.5ed45f48.js"><link rel="prefetch" href="/assets/js/104.29ef9283.js"><link rel="prefetch" href="/assets/js/105.5ab5d93e.js"><link rel="prefetch" href="/assets/js/106.1d50c853.js"><link rel="prefetch" href="/assets/js/107.9b165150.js"><link rel="prefetch" href="/assets/js/108.76df0c26.js"><link rel="prefetch" href="/assets/js/109.98462081.js"><link rel="prefetch" href="/assets/js/11.b861dc38.js"><link rel="prefetch" href="/assets/js/110.605f44fb.js"><link rel="prefetch" href="/assets/js/111.2b64dd5c.js"><link rel="prefetch" href="/assets/js/112.742c084c.js"><link rel="prefetch" href="/assets/js/113.19b27afa.js"><link rel="prefetch" href="/assets/js/114.a9f9e0b4.js"><link rel="prefetch" href="/assets/js/115.8e8fd6be.js"><link rel="prefetch" href="/assets/js/116.f47dea48.js"><link rel="prefetch" href="/assets/js/117.4681fb97.js"><link rel="prefetch" href="/assets/js/118.51c54869.js"><link rel="prefetch" href="/assets/js/119.00ad21e2.js"><link rel="prefetch" href="/assets/js/12.9480fd83.js"><link rel="prefetch" href="/assets/js/120.58937a3b.js"><link rel="prefetch" href="/assets/js/121.e6bec547.js"><link rel="prefetch" href="/assets/js/122.c482530a.js"><link rel="prefetch" href="/assets/js/123.98e9a378.js"><link rel="prefetch" href="/assets/js/124.956d6df7.js"><link rel="prefetch" href="/assets/js/125.db1f6b4a.js"><link rel="prefetch" href="/assets/js/126.8b16d246.js"><link rel="prefetch" href="/assets/js/127.fc7608d6.js"><link rel="prefetch" href="/assets/js/128.261529c8.js"><link rel="prefetch" href="/assets/js/129.77241cfd.js"><link rel="prefetch" href="/assets/js/13.afade12a.js"><link rel="prefetch" href="/assets/js/130.2bf0b622.js"><link rel="prefetch" href="/assets/js/131.77da1093.js"><link rel="prefetch" href="/assets/js/132.c1ac84bc.js"><link rel="prefetch" href="/assets/js/133.6eaf81a7.js"><link rel="prefetch" href="/assets/js/134.9596b253.js"><link rel="prefetch" href="/assets/js/135.b91963f4.js"><link rel="prefetch" href="/assets/js/136.e8b80e92.js"><link rel="prefetch" href="/assets/js/137.157c5a5f.js"><link rel="prefetch" href="/assets/js/138.e92c34dd.js"><link rel="prefetch" href="/assets/js/139.ea572b18.js"><link rel="prefetch" href="/assets/js/14.72936d94.js"><link rel="prefetch" href="/assets/js/140.d1ff5371.js"><link rel="prefetch" href="/assets/js/141.86bc76cf.js"><link rel="prefetch" href="/assets/js/142.5a6858ba.js"><link rel="prefetch" href="/assets/js/143.e26d707c.js"><link rel="prefetch" href="/assets/js/144.c3b0b2cb.js"><link rel="prefetch" href="/assets/js/145.16345e61.js"><link rel="prefetch" href="/assets/js/146.fec79b3d.js"><link rel="prefetch" href="/assets/js/147.41bda9d5.js"><link rel="prefetch" href="/assets/js/148.d89f18bc.js"><link rel="prefetch" href="/assets/js/149.16aa39c9.js"><link rel="prefetch" href="/assets/js/15.deb2f25a.js"><link rel="prefetch" href="/assets/js/150.af033679.js"><link rel="prefetch" href="/assets/js/151.f39200b2.js"><link rel="prefetch" href="/assets/js/152.238a7b4e.js"><link rel="prefetch" href="/assets/js/153.040f256b.js"><link rel="prefetch" href="/assets/js/154.b5c2e563.js"><link rel="prefetch" href="/assets/js/155.a4b51a17.js"><link rel="prefetch" href="/assets/js/156.03ffcc81.js"><link rel="prefetch" href="/assets/js/157.6bcf48c9.js"><link rel="prefetch" href="/assets/js/158.58be6e50.js"><link rel="prefetch" href="/assets/js/159.6ac43664.js"><link rel="prefetch" href="/assets/js/16.6680f10a.js"><link rel="prefetch" href="/assets/js/160.0a56c40c.js"><link rel="prefetch" href="/assets/js/161.8320b48a.js"><link rel="prefetch" href="/assets/js/162.09ba1172.js"><link rel="prefetch" href="/assets/js/163.416663c6.js"><link rel="prefetch" href="/assets/js/164.ab9df42b.js"><link rel="prefetch" href="/assets/js/165.f012858f.js"><link rel="prefetch" href="/assets/js/166.b3f190e3.js"><link rel="prefetch" href="/assets/js/167.7d8c1daf.js"><link rel="prefetch" href="/assets/js/168.1d2a0bbe.js"><link rel="prefetch" href="/assets/js/169.0375d2cf.js"><link rel="prefetch" href="/assets/js/17.da61c942.js"><link rel="prefetch" href="/assets/js/170.730cf688.js"><link rel="prefetch" href="/assets/js/171.abd738c7.js"><link rel="prefetch" href="/assets/js/172.2fdadf46.js"><link rel="prefetch" href="/assets/js/173.61a6ec8e.js"><link rel="prefetch" href="/assets/js/174.4f4ef0d7.js"><link rel="prefetch" href="/assets/js/175.52d0170e.js"><link rel="prefetch" href="/assets/js/176.1ee710bf.js"><link rel="prefetch" href="/assets/js/177.55adb070.js"><link rel="prefetch" href="/assets/js/178.e006822c.js"><link rel="prefetch" href="/assets/js/179.1c1ff90b.js"><link rel="prefetch" href="/assets/js/18.6e554767.js"><link rel="prefetch" href="/assets/js/180.db79361a.js"><link rel="prefetch" href="/assets/js/181.85a33295.js"><link rel="prefetch" href="/assets/js/182.0bc317bc.js"><link rel="prefetch" href="/assets/js/183.8ac94179.js"><link rel="prefetch" href="/assets/js/184.9b0aba05.js"><link rel="prefetch" href="/assets/js/185.c7004c1f.js"><link rel="prefetch" href="/assets/js/186.e3b7de00.js"><link rel="prefetch" href="/assets/js/187.0c9a75a0.js"><link rel="prefetch" href="/assets/js/188.d3f8b0e3.js"><link rel="prefetch" href="/assets/js/189.1112499f.js"><link rel="prefetch" href="/assets/js/19.f800e0d1.js"><link rel="prefetch" href="/assets/js/190.e3255e84.js"><link rel="prefetch" href="/assets/js/191.fd8500d5.js"><link rel="prefetch" href="/assets/js/192.7ec8e602.js"><link rel="prefetch" href="/assets/js/193.769a5088.js"><link rel="prefetch" href="/assets/js/194.afaa2cde.js"><link rel="prefetch" href="/assets/js/195.302d4234.js"><link rel="prefetch" href="/assets/js/196.8a4d74b5.js"><link rel="prefetch" href="/assets/js/197.df595ca1.js"><link rel="prefetch" href="/assets/js/198.5e3d2cbb.js"><link rel="prefetch" href="/assets/js/199.267f46ff.js"><link rel="prefetch" href="/assets/js/20.4a74a968.js"><link rel="prefetch" href="/assets/js/200.e9d3b7b5.js"><link rel="prefetch" href="/assets/js/201.57633579.js"><link rel="prefetch" href="/assets/js/202.5f71e80f.js"><link rel="prefetch" href="/assets/js/203.5c680311.js"><link rel="prefetch" href="/assets/js/204.656fc2b2.js"><link rel="prefetch" href="/assets/js/205.df6d4e75.js"><link rel="prefetch" href="/assets/js/206.8840ec8e.js"><link rel="prefetch" href="/assets/js/207.a1c2e622.js"><link rel="prefetch" href="/assets/js/208.a062ef44.js"><link rel="prefetch" href="/assets/js/209.a633bf7a.js"><link rel="prefetch" href="/assets/js/21.5f725cbd.js"><link rel="prefetch" href="/assets/js/210.d5e3c9b5.js"><link rel="prefetch" href="/assets/js/211.dbca6fcb.js"><link rel="prefetch" href="/assets/js/212.a5a00223.js"><link rel="prefetch" href="/assets/js/213.ac053291.js"><link rel="prefetch" href="/assets/js/214.611a35fb.js"><link rel="prefetch" href="/assets/js/215.29cb4ec7.js"><link rel="prefetch" href="/assets/js/216.2dd7a885.js"><link rel="prefetch" href="/assets/js/217.d88fccce.js"><link rel="prefetch" href="/assets/js/218.4448861e.js"><link rel="prefetch" href="/assets/js/219.98de5ae7.js"><link rel="prefetch" href="/assets/js/22.7d2b7a74.js"><link rel="prefetch" href="/assets/js/220.ddbcfe4f.js"><link rel="prefetch" href="/assets/js/221.9e4f7965.js"><link rel="prefetch" href="/assets/js/222.51d8a12c.js"><link rel="prefetch" href="/assets/js/223.e212dd5f.js"><link rel="prefetch" href="/assets/js/224.42094fae.js"><link rel="prefetch" href="/assets/js/225.f99e8d74.js"><link rel="prefetch" href="/assets/js/226.b6bd41b4.js"><link rel="prefetch" href="/assets/js/227.9eeb7371.js"><link rel="prefetch" href="/assets/js/228.66af5157.js"><link rel="prefetch" href="/assets/js/229.7c549c6c.js"><link rel="prefetch" href="/assets/js/23.79a6d46f.js"><link rel="prefetch" href="/assets/js/230.985735c5.js"><link rel="prefetch" href="/assets/js/231.e3555672.js"><link rel="prefetch" href="/assets/js/232.65c738d5.js"><link rel="prefetch" href="/assets/js/233.9deda12e.js"><link rel="prefetch" href="/assets/js/234.33b7c938.js"><link rel="prefetch" href="/assets/js/235.843d39b6.js"><link rel="prefetch" href="/assets/js/236.0bf50d5f.js"><link rel="prefetch" href="/assets/js/237.37f8e7ac.js"><link rel="prefetch" href="/assets/js/238.a4610f16.js"><link rel="prefetch" href="/assets/js/239.5765e27c.js"><link rel="prefetch" href="/assets/js/24.ecc90e0d.js"><link rel="prefetch" href="/assets/js/240.1c26dd1c.js"><link rel="prefetch" href="/assets/js/241.2d307b1a.js"><link rel="prefetch" href="/assets/js/242.42340d4b.js"><link rel="prefetch" href="/assets/js/243.ee9ccf21.js"><link rel="prefetch" href="/assets/js/244.8e04094f.js"><link rel="prefetch" href="/assets/js/245.78009475.js"><link rel="prefetch" href="/assets/js/246.6f3afac5.js"><link rel="prefetch" href="/assets/js/247.e4ca05c7.js"><link rel="prefetch" href="/assets/js/248.21248a56.js"><link rel="prefetch" href="/assets/js/249.e773b0d8.js"><link rel="prefetch" href="/assets/js/25.4d21fb4e.js"><link rel="prefetch" href="/assets/js/250.f89a1cd3.js"><link rel="prefetch" href="/assets/js/251.741b0e8e.js"><link rel="prefetch" href="/assets/js/252.a910cc6a.js"><link rel="prefetch" href="/assets/js/253.cbe45ea5.js"><link rel="prefetch" href="/assets/js/254.556a05d7.js"><link rel="prefetch" href="/assets/js/255.ac6865dc.js"><link rel="prefetch" href="/assets/js/256.0a5beda8.js"><link rel="prefetch" href="/assets/js/257.adf57aff.js"><link rel="prefetch" href="/assets/js/258.b3864c6a.js"><link rel="prefetch" href="/assets/js/259.bc6da491.js"><link rel="prefetch" href="/assets/js/26.a63646ea.js"><link rel="prefetch" href="/assets/js/260.a8e9559d.js"><link rel="prefetch" href="/assets/js/261.13ef0a85.js"><link rel="prefetch" href="/assets/js/262.2ced35dd.js"><link rel="prefetch" href="/assets/js/263.bd14a165.js"><link rel="prefetch" href="/assets/js/264.3795c421.js"><link rel="prefetch" href="/assets/js/265.7a122892.js"><link rel="prefetch" href="/assets/js/266.52531752.js"><link rel="prefetch" href="/assets/js/267.ee3da794.js"><link rel="prefetch" href="/assets/js/268.42efb327.js"><link rel="prefetch" href="/assets/js/269.18435524.js"><link rel="prefetch" href="/assets/js/27.fa297aad.js"><link rel="prefetch" href="/assets/js/270.befb8d53.js"><link rel="prefetch" href="/assets/js/271.774b343c.js"><link rel="prefetch" href="/assets/js/272.a151115e.js"><link rel="prefetch" href="/assets/js/273.4185e76e.js"><link rel="prefetch" href="/assets/js/274.ca51244c.js"><link rel="prefetch" href="/assets/js/275.8fb724b4.js"><link rel="prefetch" href="/assets/js/276.52a94658.js"><link rel="prefetch" href="/assets/js/277.e4709a91.js"><link rel="prefetch" href="/assets/js/278.aee5d8e2.js"><link rel="prefetch" href="/assets/js/279.b2f3a3e0.js"><link rel="prefetch" href="/assets/js/28.bdbdd517.js"><link rel="prefetch" href="/assets/js/280.4b04d1f1.js"><link rel="prefetch" href="/assets/js/281.c3f295a8.js"><link rel="prefetch" href="/assets/js/282.2ccc206d.js"><link rel="prefetch" href="/assets/js/283.c13ea6d2.js"><link rel="prefetch" href="/assets/js/284.d47910c7.js"><link rel="prefetch" href="/assets/js/285.d796ef27.js"><link rel="prefetch" href="/assets/js/29.8949825d.js"><link rel="prefetch" href="/assets/js/3.a2af090e.js"><link rel="prefetch" href="/assets/js/30.f758115f.js"><link rel="prefetch" href="/assets/js/31.1bf6d4e7.js"><link rel="prefetch" href="/assets/js/32.a84f73e3.js"><link rel="prefetch" href="/assets/js/33.ee5f4943.js"><link rel="prefetch" href="/assets/js/34.c6e6ae70.js"><link rel="prefetch" href="/assets/js/35.8fc12d56.js"><link rel="prefetch" href="/assets/js/37.c93a329a.js"><link rel="prefetch" href="/assets/js/38.9152ff6b.js"><link rel="prefetch" href="/assets/js/39.ac243f02.js"><link rel="prefetch" href="/assets/js/4.5c2368fb.js"><link rel="prefetch" href="/assets/js/40.3d664ab4.js"><link rel="prefetch" href="/assets/js/41.fc6e4f78.js"><link rel="prefetch" href="/assets/js/42.0c7eb7ed.js"><link rel="prefetch" href="/assets/js/43.5bd63e74.js"><link rel="prefetch" href="/assets/js/44.326a0948.js"><link rel="prefetch" href="/assets/js/45.78538cbf.js"><link rel="prefetch" href="/assets/js/46.9a3af4d1.js"><link rel="prefetch" href="/assets/js/47.4866cbd9.js"><link rel="prefetch" href="/assets/js/48.843108ee.js"><link rel="prefetch" href="/assets/js/49.ae03334d.js"><link rel="prefetch" href="/assets/js/5.0dab2a52.js"><link rel="prefetch" href="/assets/js/50.8586f8cc.js"><link rel="prefetch" href="/assets/js/51.ef043cfd.js"><link rel="prefetch" href="/assets/js/52.7614b041.js"><link rel="prefetch" href="/assets/js/53.8843fc62.js"><link rel="prefetch" href="/assets/js/54.4431838b.js"><link rel="prefetch" href="/assets/js/55.920f2194.js"><link rel="prefetch" href="/assets/js/56.25a7678f.js"><link rel="prefetch" href="/assets/js/57.b300ef9c.js"><link rel="prefetch" href="/assets/js/58.886a3789.js"><link rel="prefetch" href="/assets/js/59.78d7f175.js"><link rel="prefetch" href="/assets/js/6.bfb6068f.js"><link rel="prefetch" href="/assets/js/60.4c84a53d.js"><link rel="prefetch" href="/assets/js/61.1b870f60.js"><link rel="prefetch" href="/assets/js/62.fa4d42bd.js"><link rel="prefetch" href="/assets/js/63.22bf4399.js"><link rel="prefetch" href="/assets/js/64.2e9a40c6.js"><link rel="prefetch" href="/assets/js/65.7b88f024.js"><link rel="prefetch" href="/assets/js/66.146ef10d.js"><link rel="prefetch" href="/assets/js/67.d74682f7.js"><link rel="prefetch" href="/assets/js/68.119ca28e.js"><link rel="prefetch" href="/assets/js/69.6797ca70.js"><link rel="prefetch" href="/assets/js/7.6c196c91.js"><link rel="prefetch" href="/assets/js/70.f9374f4a.js"><link rel="prefetch" href="/assets/js/71.b099b324.js"><link rel="prefetch" href="/assets/js/72.a55b9ce4.js"><link rel="prefetch" href="/assets/js/73.a01de5d1.js"><link rel="prefetch" href="/assets/js/74.d97fa284.js"><link rel="prefetch" href="/assets/js/75.d418b5f0.js"><link rel="prefetch" href="/assets/js/76.328155d5.js"><link rel="prefetch" href="/assets/js/77.f24df03b.js"><link rel="prefetch" href="/assets/js/78.5e792bda.js"><link rel="prefetch" href="/assets/js/79.8fadb3f7.js"><link rel="prefetch" href="/assets/js/8.b7eb2fb2.js"><link rel="prefetch" href="/assets/js/80.83b14552.js"><link rel="prefetch" href="/assets/js/81.05e41e66.js"><link rel="prefetch" href="/assets/js/82.8832e77c.js"><link rel="prefetch" href="/assets/js/83.8c61c518.js"><link rel="prefetch" href="/assets/js/84.f79a28fd.js"><link rel="prefetch" href="/assets/js/85.a168dc8c.js"><link rel="prefetch" href="/assets/js/86.414c3f11.js"><link rel="prefetch" href="/assets/js/87.38ab6ed9.js"><link rel="prefetch" href="/assets/js/88.f0a874e0.js"><link rel="prefetch" href="/assets/js/89.2b3352d4.js"><link rel="prefetch" href="/assets/js/9.d7ae4925.js"><link rel="prefetch" href="/assets/js/90.286cc7d4.js"><link rel="prefetch" href="/assets/js/91.c17c366b.js"><link rel="prefetch" href="/assets/js/92.211fd746.js"><link rel="prefetch" href="/assets/js/93.a7ea9575.js"><link rel="prefetch" href="/assets/js/94.4085ae89.js"><link rel="prefetch" href="/assets/js/95.f05c08e9.js"><link rel="prefetch" href="/assets/js/96.6662ec36.js"><link rel="prefetch" href="/assets/js/97.46f0f0f6.js"><link rel="prefetch" href="/assets/js/98.48a3421c.js"><link rel="prefetch" href="/assets/js/99.df5f5981.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e02fc531.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="前端档案" class="logo"> <span class="site-name can-hide">前端档案</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/fe/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/base/" class="nav-link router-link-active">
+  基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/resume/" class="nav-link">
+  简历
+</a></div><div class="nav-item"><a href="/experience/" class="nav-link">
+  面经
+</a></div><div class="nav-item"><a href="/technology/" class="nav-link">
+  八股文
+</a></div><div class="nav-item"><a href="/thinks/" class="nav-link">
+  思考
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/fe/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/base/" class="nav-link router-link-active">
+  基础
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/resume/" class="nav-link">
+  简历
+</a></div><div class="nav-item"><a href="/experience/" class="nav-link">
+  面经
+</a></div><div class="nav-item"><a href="/technology/" class="nav-link">
+  八股文
+</a></div><div class="nav-item"><a href="/thinks/" class="nav-link">
+  思考
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/base/" aria-current="page" class="sidebar-link">计算机基础</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>HTTP</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/base/http/" aria-current="page" class="sidebar-link">HTTP</a></li><li><a href="/base/http/after_url.html" class="sidebar-link">输入 URL 后</a></li><li><a href="/base/http/handshakes_waves.html" class="sidebar-link">三次握手和四次挥手</a></li><li><a href="/base/http/status.html" class="sidebar-link">面试官：说说HTTP 常见的状态码有哪些，适用场景？</a></li><li><a href="/base/http/cross_domain.html" aria-current="page" class="active sidebar-link">跨域</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/base/http/cross_domain.html#一、什么是跨域" class="sidebar-link">一、什么是跨域？</a></li><li class="sidebar-sub-header"><a href="/base/http/cross_domain.html#二、跨域解决方案" class="sidebar-link">二、跨域解决方案</a></li><li class="sidebar-sub-header"><a href="/base/http/cross_domain.html#三、总结" class="sidebar-link">三、总结</a></li><li class="sidebar-sub-header"><a href="/base/http/cross_domain.html#参考文章" class="sidebar-link">参考文章</a></li></ul></li><li><a href="/base/http/1.0_1.1_2.0.html" class="sidebar-link">面试官：说说 HTTP1.0/1.1/2.0 的区别?</a></li><li><a href="/base/http/security.html" class="sidebar-link">web常见的攻击方式有哪些？如何防御？</a></li><li><a href="/base/http/HTTPS.html" class="sidebar-link">面试官：为什么说HTTPS比HTTP安全? HTTPS是如何保证安全的？</a></li><li><a href="/base/http/WebSocket.html" class="sidebar-link">面试官：说说对WebSocket的理解？应用场景？</a></li><li><a href="/base/http/UDP_TCP.html" class="sidebar-link">UDP、TCP区别</a></li><li><a href="/base/http/OSI.html" class="sidebar-link">面试官：如何理解OSI七层模型?</a></li><li><a href="/base/http/TCP_IP.html" class="sidebar-link">面试官：如何理解TCP/IP协议?</a></li><li><a href="/base/http/DNS.html" class="sidebar-link">面试官：DNS协议 是什么？说说DNS 完整的查询过程?</a></li><li><a href="/base/http/CDN.html" class="sidebar-link">面试官：如何理解CDN？说说实现原理？</a></li><li><a href="/base/http/GET_POST.html" class="sidebar-link">面试官：说一下 GET 和 POST 的区别？</a></li><li><a href="/base/http/headers.html" class="sidebar-link">面试官：说说 HTTP 常见的请求头有哪些? 作用？</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="跨域"><a href="#跨域" class="header-anchor">#</a> 跨域</h1> <h2 id="一、什么是跨域"><a href="#一、什么是跨域" class="header-anchor">#</a> 一、什么是跨域？</h2> <p>跨域：指的是浏览器不能执行其他网站的脚本。它是由浏览器的<strong>同源策略</strong>造成的，是浏览器对javascript施加的安全限制。</p> <h3 id="_1-什么是同源策略及其限制内容"><a href="#_1-什么是同源策略及其限制内容" class="header-anchor">#</a> 1.什么是同源策略及其限制内容？</h3> <p>同源策略是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到XSS、CSRF等攻击。所谓同源是指&quot;协议+域名+端口&quot;三者相同，即便两个不同的域名指向同一个ip地址，也非同源。</p> <p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/23/1638b3579d9eeb32~tplv-t2oaga2asx-watermark.awebp" alt="url的组成"></p> <p><strong>同源策略限制内容有：</strong></p> <ul><li>Cookie、LocalStorage、IndexedDB 等存储性内容</li> <li>DOM 节点</li> <li>AJAX 请求发送后，结果被浏览器拦截了</li></ul> <p>但是有三个标签是允许跨域加载资源：</p> <ul><li><code>&lt;img src=XXX&gt;</code></li> <li><code>&lt;link href=XXX&gt;</code></li> <li><code>&lt;script src=XXX&gt;</code></li></ul> <h3 id="_2-常见跨域场景"><a href="#_2-常见跨域场景" class="header-anchor">#</a> 2.常见跨域场景</h3> <p><strong>当协议、子域名、主域名、端口号中任意一个不相同时，都算作不同域</strong>。不同域之间相互请求资源，就算作“跨域”。常见跨域场景如下图所示：</p> <p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/5/23/1638b3579dde630e~tplv-t2oaga2asx-watermark.awebp" alt="img"></p> <p>特别说明两点：</p> <p><strong>第一：如果是协议和端口造成的跨域问题“前台”是无能为力的。</strong></p> <p><strong>第二：在跨域问题上，仅仅是通过“URL的首部”来识别而不会根据域名对应的IP地址是否相同来判断。“URL的首部”可以理解为“协议, 域名和端口必须匹配”</strong>。</p> <p>这里你或许有个疑问：<strong>请求跨域了，那么请求到底发出去没有？</strong></p> <p><strong>跨域并不是请求发不出去，请求能发出去，服务端能收到请求并正常返回结果，只是结果被浏览器拦截了</strong>。你可能会疑问明明通过表单的方式可以发起跨域请求，为什么 Ajax 就不会?因为归根结底，跨域是为了阻止用户读取到另一个域名下的内容，Ajax 可以获取响应，浏览器认为这不安全，所以拦截了响应。但是表单并不会获取新的内容，所以可以发起跨域请求。同时也说明了跨域并不能完全阻止 CSRF，因为请求毕竟是发出去了。</p> <h2 id="二、跨域解决方案"><a href="#二、跨域解决方案" class="header-anchor">#</a> 二、跨域解决方案</h2> <h3 id="_1-jsonp"><a href="#_1-jsonp" class="header-anchor">#</a> 1.jsonp</h3> <h4 id="_1-jsonp原理"><a href="#_1-jsonp原理" class="header-anchor">#</a> 1) JSONP原理</h4> <p><strong>利用 <code>&lt;script&gt;</code> 标签没有跨域限制的漏洞，网页可以得到从其他来源动态产生的 JSON 数据。JSONP请求一定需要对方的服务器做支持才可以。</strong></p> <h4 id="_2-jsonp和ajax对比"><a href="#_2-jsonp和ajax对比" class="header-anchor">#</a> 2) JSONP和AJAX对比</h4> <p>JSONP和AJAX相同，都是客户端向服务器端发送请求，从服务器端获取数据的方式。但AJAX属于同源策略，JSONP属于非同源策略（跨域请求）</p> <h4 id="_3-jsonp优缺点"><a href="#_3-jsonp优缺点" class="header-anchor">#</a> 3) JSONP优缺点</h4> <p>JSONP优点是简单兼容性好，可用于解决主流浏览器的跨域数据访问的问题。<strong>缺点是仅支持get方法具有局限性,不安全可能会遭受XSS攻击。</strong></p> <h4 id="_4-jsonp的实现流程"><a href="#_4-jsonp的实现流程" class="header-anchor">#</a> 4) JSONP的实现流程</h4> <ul><li>声明一个回调函数，其函数名(如show)当做参数值，要传递给跨域请求数据的服务器，函数形参为要获取目标数据(服务器返回的data)。</li> <li>创建一个<code>&lt;script&gt;</code>标签，把那个跨域的API数据接口地址，赋值给script的src,还要在这个地址中向服务器传递该函数名（可以通过问号传参:?callback=show）。</li> <li>服务器接收到请求后，需要进行特殊的处理：把传递进来的函数名和它需要给你的数据拼接成一个字符串,例如：传递进去的函数名是show，它准备好的数据是<code>show('我不爱你')</code>。</li> <li>最后服务器把准备的数据通过HTTP协议返回给客户端，客户端再调用执行之前声明的回调函数（show），对返回的数据进行操作。</li></ul> <p>在开发中可能会遇到多个 JSONP 请求的回调函数名是相同的，这时候就需要自己封装一个 JSONP函数。</p> <div class="language- extra-class"><pre class="language-text"><code>// index.html
+function jsonp({ url, params, callback }) {
+  return new Promise((resolve, reject) =&gt; {
+    let script = document.createElement('script')
+    window[callback] = function(data) {
+      resolve(data)
+      document.body.removeChild(script)
+    }
+    params = { ...params, callback } // wd=b&amp;callback=show
+    let arrs = []
+    for (let key in params) {
+      arrs.push(`${key}=${params[key]}`)
+    }
+    script.src = `${url}?${arrs.join('&amp;')}`
+    document.body.appendChild(script)
+  })
+}
+jsonp({
+  url: 'http://localhost:3000/say',
+  params: { wd: 'Iloveyou' },
+  callback: 'show'
+}).then(data =&gt; {
+  console.log(data)
+})
+复制代码
+</code></pre></div><p>上面这段代码相当于向<code>http://localhost:3000/say?wd=Iloveyou&amp;callback=show</code>这个地址请求数据，然后后台返回<code>show('我不爱你')</code>，最后会运行show()这个函数，打印出'我不爱你'</p> <div class="language- extra-class"><pre class="language-text"><code>// server.js
+let express = require('express')
+let app = express()
+app.get('/say', function(req, res) {
+  let { wd, callback } = req.query
+  console.log(wd) // Iloveyou
+  console.log(callback) // show
+  res.end(`${callback}('我不爱你')`)
+})
+app.listen(3000)
+复制代码
+</code></pre></div><h4 id="_5-jquery的jsonp形式"><a href="#_5-jquery的jsonp形式" class="header-anchor">#</a> 5) jQuery的jsonp形式</h4> <p><strong>JSONP都是GET和异步请求的，不存在其他的请求方式和同步请求，且jQuery默认就会给JSONP的请求清除缓存。</strong></p> <div class="language- extra-class"><pre class="language-text"><code>$.ajax({
+url:&quot;http://crossdomain.com/jsonServerResponse&quot;,
+dataType:&quot;jsonp&quot;,
+type:&quot;get&quot;,//可以省略
+jsonpCallback:&quot;show&quot;,//-&gt;自定义传递给服务器的函数名，而不是使用jQuery自动生成的，可省略
+jsonp:&quot;callback&quot;,//-&gt;把传递函数名的那个形参callback，可省略
+success:function (data){
+console.log(data);}
+});
+复制代码
+</code></pre></div><h3 id="_2-cors"><a href="#_2-cors" class="header-anchor">#</a> 2.cors</h3> <p><strong>CORS 需要浏览器和后端同时支持。IE 8 和 9 需要通过 XDomainRequest 来实现</strong>。</p> <p>浏览器会自动进行 CORS 通信，实现 CORS 通信的关键是后端。只要后端实现了 CORS，就实现了跨域。</p> <p>服务端设置 Access-Control-Allow-Origin 就可以开启 CORS。 该属性表示哪些域名可以访问资源，如果设置通配符则表示所有网站都可以访问资源。</p> <p>虽然设置 CORS 和前端没什么关系，但是通过这种方式解决跨域问题的话，会在发送请求时出现两种情况，分别为<strong>简单请求</strong>和<strong>复杂请求</strong>。</p> <h4 id="_1-简单请求"><a href="#_1-简单请求" class="header-anchor">#</a> 1) 简单请求</h4> <p>只要同时满足以下两大条件，就属于简单请求</p> <p>条件1：使用下列方法之一：</p> <ul><li>GET</li> <li>HEAD</li> <li>POST</li></ul> <p>条件2：Content-Type 的值仅限于下列三者之一：</p> <ul><li>text/plain</li> <li>multipart/form-data</li> <li>application/x-www-form-urlencoded</li></ul> <p>请求中的任意 XMLHttpRequestUpload 对象均没有注册任何事件监听器； XMLHttpRequestUpload 对象可以使用 XMLHttpRequest.upload 属性访问。</p> <h4 id="_2-复杂请求"><a href="#_2-复杂请求" class="header-anchor">#</a> 2) 复杂请求</h4> <p>不符合以上条件的请求就肯定是复杂请求了。 复杂请求的CORS请求，会在正式通信之前，增加一次HTTP查询请求，称为&quot;预检&quot;请求,该请求是 option 方法的，通过该请求来知道服务端是否允许跨域请求。</p> <p>我们用<code>PUT</code>向后台请求时，属于复杂请求，后台需做如下配置：</p> <div class="language- extra-class"><pre class="language-text"><code>// 允许哪个方法访问我
+res.setHeader('Access-Control-Allow-Methods', 'PUT')
+// 预检的存活时间
+res.setHeader('Access-Control-Max-Age', 6)
+// OPTIONS请求不做任何处理
+if (req.method === 'OPTIONS') {
+  res.end() 
+}
+// 定义后台返回的内容
+app.put('/getData', function(req, res) {
+  console.log(req.headers)
+  res.end('我不爱你')
+})
+复制代码
+</code></pre></div><p>接下来我们看下一个完整复杂请求的例子，并且介绍下CORS请求相关的字段</p> <div class="language- extra-class"><pre class="language-text"><code>// index.html
+let xhr = new XMLHttpRequest()
+document.cookie = 'name=xiamen' // cookie不能跨域
+xhr.withCredentials = true // 前端设置是否带cookie
+xhr.open('PUT', 'http://localhost:4000/getData', true)
+xhr.setRequestHeader('name', 'xiamen')
+xhr.onreadystatechange = function() {
+  if (xhr.readyState === 4) {
+    if ((xhr.status &gt;= 200 &amp;&amp; xhr.status &lt; 300) || xhr.status === 304) {
+      console.log(xhr.response)
+      //得到响应头，后台需设置Access-Control-Expose-Headers
+      console.log(xhr.getResponseHeader('name'))
+    }
+  }
+}
+xhr.send()
+复制代码
+//server1.js
+let express = require('express');
+let app = express();
+app.use(express.static(__dirname));
+app.listen(3000);
+复制代码
+//server2.js
+let express = require('express')
+let app = express()
+let whitList = ['http://localhost:3000'] //设置白名单
+app.use(function(req, res, next) {
+  let origin = req.headers.origin
+  if (whitList.includes(origin)) {
+    // 设置哪个源可以访问我
+    res.setHeader('Access-Control-Allow-Origin', origin)
+    // 允许携带哪个头访问我
+    res.setHeader('Access-Control-Allow-Headers', 'name')
+    // 允许哪个方法访问我
+    res.setHeader('Access-Control-Allow-Methods', 'PUT')
+    // 允许携带cookie
+    res.setHeader('Access-Control-Allow-Credentials', true)
+    // 预检的存活时间
+    res.setHeader('Access-Control-Max-Age', 6)
+    // 允许返回的头
+    res.setHeader('Access-Control-Expose-Headers', 'name')
+    if (req.method === 'OPTIONS') {
+      res.end() // OPTIONS请求不做任何处理
+    }
+  }
+  next()
+})
+app.put('/getData', function(req, res) {
+  console.log(req.headers)
+  res.setHeader('name', 'jw') //返回一个响应头，后台需设置
+  res.end('我不爱你')
+})
+app.get('/getData', function(req, res) {
+  console.log(req.headers)
+  res.end('我不爱你')
+})
+app.use(express.static(__dirname))
+app.listen(4000)
+复制代码
+</code></pre></div><p>上述代码由<code>http://localhost:3000/index.html</code>向<code>http://localhost:4000/</code>跨域请求，正如我们上面所说的，后端是实现 CORS 通信的关键。</p> <h3 id="_3-postmessage"><a href="#_3-postmessage" class="header-anchor">#</a> 3.postMessage</h3> <p>postMessage是HTML5 XMLHttpRequest Level 2中的API，且是为数不多可以跨域操作的window属性之一，它可用于解决以下方面的问题：</p> <ul><li>页面和其打开的新窗口的数据传递</li> <li>多窗口之间消息传递</li> <li>页面与嵌套的iframe消息传递</li> <li>上面三个场景的跨域数据传递</li></ul> <p><strong>postMessage()方法允许来自不同源的脚本采用异步方式进行有限的通信，可以实现跨文本档、多窗口、跨域消息传递</strong>。</p> <blockquote><p>otherWindow.postMessage(message, targetOrigin, [transfer]);</p></blockquote> <ul><li>message: 将要发送到其他 window的数据。</li> <li>targetOrigin:通过窗口的origin属性来指定哪些窗口能接收到消息事件，其值可以是字符串&quot;*&quot;（表示无限制）或者一个URI。在发送消息的时候，如果目标窗口的协议、主机地址或端口这三者的任意一项不匹配targetOrigin提供的值，那么消息就不会被发送；只有三者完全匹配，消息才会被发送。</li> <li>transfer(可选)：是一串和message 同时传递的 Transferable 对象. 这些对象的所有权将被转移给消息的接收方，而发送一方将不再保有所有权。</li></ul> <p>接下来我们看个例子： <code>http://localhost:3000/a.html</code>页面向<code>http://localhost:4000/b.html</code>传递“我爱你”,然后后者传回&quot;我不爱你&quot;。</p> <div class="language- extra-class"><pre class="language-text"><code>// a.html
+  &lt;iframe src=&quot;http://localhost:4000/b.html&quot; frameborder=&quot;0&quot; id=&quot;frame&quot; onload=&quot;load()&quot;&gt;&lt;/iframe&gt; //等它加载完触发一个事件
+  //内嵌在http://localhost:3000/a.html
+    &lt;script&gt;
+      function load() {
+        let frame = document.getElementById('frame')
+        frame.contentWindow.postMessage('我爱你', 'http://localhost:4000') //发送数据
+        window.onmessage = function(e) { //接受返回数据
+          console.log(e.data) //我不爱你
+        }
+      }
+    &lt;/script&gt;
+复制代码
+// b.html
+  window.onmessage = function(e) {
+    console.log(e.data) //我爱你
+    e.source.postMessage('我不爱你', e.origin)
+ }
+复制代码
+</code></pre></div><h3 id="_4-websocket"><a href="#_4-websocket" class="header-anchor">#</a> 4.websocket</h3> <p>Websocket是HTML5的一个持久化的协议，它实现了浏览器与服务器的全双工通信，同时也是跨域的一种解决方案。WebSocket和HTTP都是应用层协议，都基于 TCP 协议。但是 <strong>WebSocket 是一种双向通信协议，在建立连接之后，WebSocket 的 server 与 client 都能主动向对方发送或接收数据</strong>。同时，WebSocket 在建立连接时需要借助 HTTP 协议，连接建立好了之后 client 与 server 之间的双向通信就与 HTTP 无关了。</p> <p>原生WebSocket API使用起来不太方便，我们使用<code>Socket.io</code>，它很好地封装了webSocket接口，提供了更简单、灵活的接口，也对不支持webSocket的浏览器提供了向下兼容。</p> <p>我们先来看个例子：本地文件socket.html向<code>localhost:3000</code>发生数据和接受数据</p> <div class="language- extra-class"><pre class="language-text"><code>// socket.html
+&lt;script&gt;
+    let socket = new WebSocket('ws://localhost:3000');
+    socket.onopen = function () {
+      socket.send('我爱你');//向服务器发送数据
+    }
+    socket.onmessage = function (e) {
+      console.log(e.data);//接收服务器返回的数据
+    }
+&lt;/script&gt;
+复制代码
+// server.js
+let express = require('express');
+let app = express();
+let WebSocket = require('ws');//记得安装ws
+let wss = new WebSocket.Server({port:3000});
+wss.on('connection',function(ws) {
+  ws.on('message', function (data) {
+    console.log(data);
+    ws.send('我不爱你')
+  });
+})
+复制代码
+</code></pre></div><h3 id="_5-node中间件代理-两次跨域"><a href="#_5-node中间件代理-两次跨域" class="header-anchor">#</a> 5. Node中间件代理(两次跨域)</h3> <p>实现原理：<strong>同源策略是浏览器需要遵循的标准，而如果是服务器向服务器请求就无需遵循同源策略。</strong> 代理服务器，需要做以下几个步骤：</p> <ul><li><p>接受客户端请求 。</p></li> <li><p>将请求 转发给服务器。</p></li> <li><p>拿到服务器 响应 数据。</p></li> <li><p>将 响应 转发给客户端。</p> <p><img src="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2019/1/17/1685c5bed77e7788~tplv-t2oaga2asx-watermark.awebp" alt="img"></p></li></ul> <p>我们先来看个例子：本地文件index.html文件，通过代理服务器<code>http://localhost:3000</code>向目标服务器<code>http://localhost:4000</code>请求数据。</p> <div class="language- extra-class"><pre class="language-text"><code>// index.html(http://127.0.0.1:5500)
+ &lt;script src=&quot;https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+      $.ajax({
+        url: 'http://localhost:3000',
+        type: 'post',
+        data: { name: 'xiamen', password: '123456' },
+        contentType: 'application/json;charset=utf-8',
+        success: function(result) {
+          console.log(result) // {&quot;title&quot;:&quot;fontend&quot;,&quot;password&quot;:&quot;123456&quot;}
+        },
+        error: function(msg) {
+          console.log(msg)
+        }
+      })
+     &lt;/script&gt;
+复制代码
+// server1.js 代理服务器(http://localhost:3000)
+const http = require('http')
+// 第一步：接受客户端请求
+const server = http.createServer((request, response) =&gt; {
+  // 代理服务器，直接和浏览器直接交互，需要设置CORS 的首部字段
+  response.writeHead(200, {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': '*',
+    'Access-Control-Allow-Headers': 'Content-Type'
+  })
+  // 第二步：将请求转发给服务器
+  const proxyRequest = http
+    .request(
+      {
+        host: '127.0.0.1',
+        port: 4000,
+        url: '/',
+        method: request.method,
+        headers: request.headers
+      },
+      serverResponse =&gt; {
+        // 第三步：收到服务器的响应
+        var body = ''
+        serverResponse.on('data', chunk =&gt; {
+          body += chunk
+        })
+        serverResponse.on('end', () =&gt; {
+          console.log('The data is ' + body)
+          // 第四步：将响应结果转发给浏览器
+          response.end(body)
+        })
+      }
+    )
+    .end()
+})
+server.listen(3000, () =&gt; {
+  console.log('The proxyServer is running at http://localhost:3000')
+})
+复制代码
+// server2.js(http://localhost:4000)
+const http = require('http')
+const data = { title: 'fontend', password: '123456' }
+const server = http.createServer((request, response) =&gt; {
+  if (request.url === '/') {
+    response.end(JSON.stringify(data))
+  }
+})
+server.listen(4000, () =&gt; {
+  console.log('The server is running at http://localhost:4000')
+})
+复制代码
+</code></pre></div><p>上述代码经过两次跨域，值得注意的是浏览器向代理服务器发送请求，也遵循同源策略，最后在index.html文件打印出<code>{&quot;title&quot;:&quot;fontend&quot;,&quot;password&quot;:&quot;123456&quot;}</code></p> <h3 id="_6-nginx反向代理"><a href="#_6-nginx反向代理" class="header-anchor">#</a> 6.nginx反向代理</h3> <p>实现原理类似于Node中间件代理，需要你搭建一个中转nginx服务器，用于转发请求。</p> <p>使用nginx反向代理实现跨域，是最简单的跨域方式。只需要修改nginx的配置即可解决跨域问题，支持所有浏览器，支持session，不需要修改任何代码，并且不会影响服务器性能。</p> <p>实现思路：通过nginx配置一个代理服务器（域名与domain1相同，端口不同）做跳板机，反向代理访问domain2接口，并且可以顺便修改cookie中domain信息，方便当前域cookie写入，实现跨域登录。</p> <p>先下载<a href="https://link.juejin.cn?target=http%3A%2F%2Fnginx.org%2Fen%2Fdownload.html" target="_blank" rel="noopener noreferrer">nginx<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，然后将nginx目录下的nginx.conf修改如下:</p> <div class="language- extra-class"><pre class="language-text"><code>// proxy服务器
+server {
+    listen       81;
+    server_name  www.domain1.com;
+    location / {
+        proxy_pass   http://www.domain2.com:8080;  #反向代理
+        proxy_cookie_domain www.domain2.com www.domain1.com; #修改cookie里域名
+        index  index.html index.htm;
+
+        # 当用webpack-dev-server等中间件代理接口访问nignx时，此时无浏览器参与，故没有同源限制，下面的跨域配置可不启用
+        add_header Access-Control-Allow-Origin http://www.domain1.com;  #当前端只跨域不带cookie时，可为*
+        add_header Access-Control-Allow-Credentials true;
+    }
+}
+复制代码
+</code></pre></div><p>最后通过命令行<code>nginx -s reload</code>启动nginx</p> <div class="language- extra-class"><pre class="language-text"><code>// index.html
+var xhr = new XMLHttpRequest();
+// 前端开关：浏览器是否读写cookie
+xhr.withCredentials = true;
+// 访问nginx中的代理服务器
+xhr.open('get', 'http://www.domain1.com:81/?user=admin', true);
+xhr.send();
+复制代码
+// server.js
+var http = require('http');
+var server = http.createServer();
+var qs = require('querystring');
+server.on('request', function(req, res) {
+    var params = qs.parse(req.url.substring(2));
+    // 向前台写cookie
+    res.writeHead(200, {
+        'Set-Cookie': 'l=a123456;Path=/;Domain=www.domain2.com;HttpOnly'   // HttpOnly:脚本无法读取
+    });
+    res.write(JSON.stringify(params));
+    res.end();
+});
+server.listen('8080');
+console.log('Server is running at port 8080...');
+复制代码
+</code></pre></div><h3 id="_7-window-name-iframe"><a href="#_7-window-name-iframe" class="header-anchor">#</a> 7.window.name + iframe</h3> <p>window.name属性的独特之处：name值在不同的页面（甚至不同域名）加载后依旧存在，并且可以支持非常长的 name 值（2MB）。</p> <p>其中a.html和b.html是同域的，都是<code>http://localhost:3000</code>;而c.html是<code>http://localhost:4000</code></p> <div class="language- extra-class"><pre class="language-text"><code> // a.html(http://localhost:3000/b.html)
+  &lt;iframe src=&quot;http://localhost:4000/c.html&quot; frameborder=&quot;0&quot; onload=&quot;load()&quot; id=&quot;iframe&quot;&gt;&lt;/iframe&gt;
+  &lt;script&gt;
+    let first = true
+    // onload事件会触发2次，第1次加载跨域页，并留存数据于window.name
+    function load() {
+      if(first){
+      // 第1次onload(跨域页)成功后，切换到同域代理页面
+        let iframe = document.getElementById('iframe');
+        iframe.src = 'http://localhost:3000/b.html';
+        first = false;
+      }else{
+      // 第2次onload(同域b.html页)成功后，读取同域window.name中数据
+        console.log(iframe.contentWindow.name);
+      }
+    }
+  &lt;/script&gt;
+复制代码
+</code></pre></div><p>b.html为中间代理页，与a.html同域，内容为空。</p> <div class="language- extra-class"><pre class="language-text"><code> // c.html(http://localhost:4000/c.html)
+  &lt;script&gt;
+    window.name = '我不爱你'  
+  &lt;/script&gt;
+复制代码
+</code></pre></div><p>总结：通过iframe的src属性由外域转向本地域，跨域数据即由iframe的window.name从外域传递到本地域。这个就巧妙地绕过了浏览器的跨域访问限制，但同时它又是安全操作。</p> <h3 id="_8-location-hash-iframe"><a href="#_8-location-hash-iframe" class="header-anchor">#</a> 8.location.hash +  iframe</h3> <p>实现原理： a.html欲与c.html跨域相互通信，通过中间页b.html来实现。 三个页面，不同域之间利用iframe的location.hash传值，相同域之间直接js访问来通信。</p> <p>具体实现步骤：一开始a.html给c.html传一个hash值，然后c.html收到hash值后，再把hash值传递给b.html，最后b.html将结果放到a.html的hash值中。 同样的，a.html和b.html是同域的，都是<code>http://localhost:3000</code>;而c.html是<code>http://localhost:4000</code></p> <div class="language- extra-class"><pre class="language-text"><code> // a.html
+  &lt;iframe src=&quot;http://localhost:4000/c.html#iloveyou&quot;&gt;&lt;/iframe&gt;
+  &lt;script&gt;
+    window.onhashchange = function () { //检测hash的变化
+      console.log(location.hash);
+    }
+  &lt;/script&gt;
+复制代码
+ // b.html
+  &lt;script&gt;
+    window.parent.parent.location.hash = location.hash 
+    //b.html将结果放到a.html的hash值中，b.html可通过parent.parent访问a.html页面
+  &lt;/script&gt;
+复制代码
+ // c.html
+ console.log(location.hash);
+  let iframe = document.createElement('iframe');
+  iframe.src = 'http://localhost:3000/b.html#idontloveyou';
+  document.body.appendChild(iframe);
+复制代码
+</code></pre></div><h3 id="_9-document-domain-iframe"><a href="#_9-document-domain-iframe" class="header-anchor">#</a> 9.document.domain + iframe</h3> <p><strong>该方式只能用于二级域名相同的情况下，比如 <code>a.test.com</code> 和 <code>b.test.com</code> 适用于该方式</strong>。 只需要给页面添加 <code>document.domain ='test.com'</code> 表示二级域名都相同就可以实现跨域。</p> <p>实现原理：两个页面都通过js强制设置document.domain为基础主域，就实现了同域。</p> <p>我们看个例子：页面<code>a.zf1.cn:3000/a.html</code>获取页面<code>b.zf1.cn:3000/b.html</code>中a的值</p> <div class="language- extra-class"><pre class="language-text"><code>// a.html
+&lt;body&gt;
+ helloa
+  &lt;iframe src=&quot;http://b.zf1.cn:3000/b.html&quot; frameborder=&quot;0&quot; onload=&quot;load()&quot; id=&quot;frame&quot;&gt;&lt;/iframe&gt;
+  &lt;script&gt;
+    document.domain = 'zf1.cn'
+    function load() {
+      console.log(frame.contentWindow.a);
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+复制代码
+// b.html
+&lt;body&gt;
+   hellob
+   &lt;script&gt;
+     document.domain = 'zf1.cn'
+     var a = 100;
+   &lt;/script&gt;
+&lt;/body&gt;
+复制代码
+</code></pre></div><h2 id="三、总结"><a href="#三、总结" class="header-anchor">#</a> 三、总结</h2> <ul><li>CORS支持所有类型的HTTP请求，是跨域HTTP请求的根本解决方案</li> <li>JSONP只支持GET请求，JSONP的优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。</li> <li>不管是Node中间件代理还是nginx反向代理，主要是通过同源策略对服务器不加限制。</li> <li>日常工作中，用得比较多的跨域方案是cors和nginx反向代理</li></ul> <p><strong>给大家推荐一个好用的BUG监控工具<a href="https://link.juejin.cn?target=https%3A%2F%2Fwww.fundebug.com%2F%3Futm_source%3Dliao" target="_blank" rel="noopener noreferrer">Fundebug<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，欢迎免费试用！</strong></p> <h2 id="参考文章"><a href="#参考文章" class="header-anchor">#</a> 参考文章</h2> <ul><li><a href="https://juejin.cn/post/6844903767226351623" target="_blank" rel="noopener noreferrer">九种跨域方式实现原理（完整版） - 掘金 (juejin.cn)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://link.juejin.cn?target=http%3A%2F%2Fwww.zhufengpeixun.cn%2Fmain%2Fcourse%2Findex.html" target="_blank" rel="noopener noreferrer">珠峰架构课(强烈推荐)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://link.juejin.cn?target=http%3A%2F%2Fwww.ruanyifeng.com%2Fblog%2F2016%2F04%2Fcors.html" target="_blank" rel="noopener noreferrer">跨域资源共享 CORS 详解<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://juejin.cn/book/6844733763675488269/section/6844733763771957261" target="_blank" rel="noopener noreferrer">前端面试之道<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://link.juejin.cn?target=https%3A%2F%2Fdeveloper.mozilla.org%2Fzh-CN%2Fdocs%2FWeb%2FAPI%2FWindow%2FpostMessage" target="_blank" rel="noopener noreferrer">window.postMessage<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://link.juejin.cn?target=https%3A%2F%2Fsegmentfault.com%2Fa%2F1190000011145364" target="_blank" rel="noopener noreferrer">前端常见跨域解决方案（全）<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://juejin.cn/post/6844903607297376263" target="_blank" rel="noopener noreferrer">深入跨域问题(4) - 利用代理解决跨域<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">12/1/2021, 9:27:10 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/base/http/status.html" class="prev">
+        面试官：说说HTTP 常见的状态码有哪些，适用场景？
+      </a></span> <span class="next"><a href="/base/http/1.0_1.1_2.0.html">
+        面试官：说说 HTTP1.0/1.1/2.0 的区别?
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.a4bb23ea.js" defer></script><script src="/assets/js/2.db7a59af.js" defer></script><script src="/assets/js/36.bba826d5.js" defer></script>
+  </body>
+</html>
