@@ -1,0 +1,1 @@
+const e={key:"v-bed6b2e8",path:"/posts/fe/webpack/babel.html",title:"Babel",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"3. \u6A21\u677F\u5F15\u64CE",slug:"_3-\u6A21\u677F\u5F15\u64CE",children:[]}],git:{updatedTime:1650531298e3,contributors:[{name:"kyxiao",email:"1143480553@qq.com",commits:1}]},filePathRelative:"posts/fe/webpack/babel.md"};export{e as data};

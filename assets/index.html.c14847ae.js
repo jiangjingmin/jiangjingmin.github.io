@@ -1,0 +1,1 @@
+const e={key:"v-47a3892f",path:"/posts/fe/typescript/",title:"TypeScript",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u88C5\u9970\u5668 declare",slug:"\u88C5\u9970\u5668-declare",children:[]}],git:{updatedTime:1650531298e3,contributors:[{name:"kyxiao",email:"1143480553@qq.com",commits:1}]},filePathRelative:"posts/fe/typescript/README.md"};export{e as data};
