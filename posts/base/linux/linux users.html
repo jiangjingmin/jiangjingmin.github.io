@@ -23,7 +23,7 @@
 			}
     </script>
     <link rel="icon" href="/favicon.ico"><title>面试官：说说你对 linux 用户管理的理解？相关的命令有哪些？ | 前端档案</title><meta name="description" content="前端通关宝典">
-    <link rel="modulepreload" href="/assets/app.f060585c.js"><link rel="modulepreload" href="/assets/linux users.html.75a29e6c.js"><link rel="modulepreload" href="/assets/linux users.html.70fe0f01.js">
+    <link rel="modulepreload" href="/assets/app.a7f79250.js"><link rel="modulepreload" href="/assets/linux users.html.75a29e6c.js"><link rel="modulepreload" href="/assets/linux users.html.7a7f21ae.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -54,6 +54,6 @@ passwd: password expiry information changed.
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h3 id="删除用户组" tabindex="-1"><a class="header-anchor" href="#删除用户组" aria-hidden="true">#</a> 删除用户组</h3><p><code>groupdel</code> 用于删除用户组，如果该群组中仍包括某些用户，则必须先删除这些用户后，方能删除群组</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>groupdel [groupname]
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>日常工作通常会碰到只有<code>root</code>用户才有权限执行的操作，这就需要使用用户身份切换的命令：</p><h3 id="su" tabindex="-1"><a class="header-anchor" href="#su" aria-hidden="true">#</a> su</h3><p>用于变更为其他使用者的身份，除 <code>root</code> 外，需要键入该使用者的密码</p><h3 id="sudo" tabindex="-1"><a class="header-anchor" href="#sudo" aria-hidden="true">#</a> sudo</h3><p><code>sudo</code>命令以系统管理者的身份执行指令，也就是说，经由 sudo 所执行的指令就好像是 root 亲自执行</p><p>不是所有的用户都能执行 <code>sudo</code> 命令的，而是在 <code>/etc/sudoers</code> 文件内的用户才能执行这个命令</p><p>例如<code>sudo</code>命令使用<code>ls</code>：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>$ sudo ls
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h2 id="参考文献" tabindex="-1"><a class="header-anchor" href="#参考文献" aria-hidden="true">#</a> 参考文献</h2><ul><li>https://zhuanlan.zhihu.com/p/37964411</li><li>https://zhuanlan.zhihu.com/p/105482468</li></ul><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 1143480553@qq.com">kyxiao</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/posts/base/linux/vim.html" class="" aria-label="面试官：说说 linux 系统下 文本编辑常用的命令有哪些？"><!--[--><!--]--> 面试官：说说 linux 系统下 文本编辑常用的命令有哪些？ <!--[--><!--]--></a></span><span class="next"><a href="/posts/base/linux/redirect_pipe.html" class="" aria-label="面试官：说说你对输入输出重定向和管道的理解？应用场景？"><!--[--><!--]--> 面试官：说说你对输入输出重定向和管道的理解？应用场景？ <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.f060585c.js" defer></script>
+    <script type="module" src="/assets/app.a7f79250.js" defer></script>
   </body>
 </html>

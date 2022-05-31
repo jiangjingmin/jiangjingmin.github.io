@@ -23,7 +23,7 @@
 			}
     </script>
     <link rel="icon" href="/favicon.ico"><title>说说对git pull 和 git fetch 的理解？有什么区别？ | 前端档案</title><meta name="description" content="前端通关宝典">
-    <link rel="modulepreload" href="/assets/app.f060585c.js"><link rel="modulepreload" href="/assets/git_pull_git_fetch.html.9334a886.js"><link rel="modulepreload" href="/assets/git_pull_git_fetch.html.dc31f09d.js">
+    <link rel="modulepreload" href="/assets/app.a7f79250.js"><link rel="modulepreload" href="/assets/git_pull_git_fetch.html.9334a886.js"><link rel="modulepreload" href="/assets/git_pull_git_fetch.html.5ed5792b.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -33,6 +33,6 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><h3 id="pull" tabindex="-1"><a class="header-anchor" href="#pull" aria-hidden="true">#</a> pull</h3><p>两者的用法十分相似，<code>pull</code>用法如下：</p><div class="language-cmd ext-cmd line-numbers-mode"><pre class="language-cmd"><code>git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>例如将远程主机<code>origin</code>的<code>master</code>分支拉取过来，与本地的<code>branchtest</code>分支合并，命令如下：</p><div class="language-cmd ext-cmd line-numbers-mode"><pre class="language-cmd"><code>git pull origin master:branchtest
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p>同样如果上述没有冒号，则表示将远程<code>origin</code>仓库的<code>master</code>分支拉取下来与本地当前分支合并</p><h2 id="三、区别" tabindex="-1"><a class="header-anchor" href="#三、区别" aria-hidden="true">#</a> 三、区别</h2><p>相同点：</p><ul><li>在作用上他们的功能是大致相同的，都是起到了更新代码的作用</li></ul><p>不同点：</p><ul><li>git pull是相当于从远程仓库获取最新版本，然后再与本地分支merge，即git pull = git fetch + git merge</li><li>相比起来，git fetch 更安全也更符合实际要求，在 merge 前，我们可以查看更新情况，根据实际情况再决定是否合并</li></ul><h2 id="参考文献" tabindex="-1"><a class="header-anchor" href="#参考文献" aria-hidden="true">#</a> 参考文献</h2><ul><li>https://zhuanlan.zhihu.com/p/123370920</li><li>https://segmentfault.com/a/1190000017030384</li><li>https://juejin.cn/post/6844903921794859021</li></ul><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 1143480553@qq.com">kyxiao</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/posts/tools/git/HEAD_tree_index.html" class="" aria-label="面试官：说说Git 中 HEAD、工作树和索引之间的区别？"><!--[--><!--]--> 面试官：说说Git 中 HEAD、工作树和索引之间的区别？ <!--[--><!--]--></a></span><span class="next"><a href="/posts/tools/git/git_stash.md" class="" aria-label="/posts/tools/git/git_stash.md"><!--[--><!--]--> /posts/tools/git/git_stash.md <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.f060585c.js" defer></script>
+    <script type="module" src="/assets/app.a7f79250.js" defer></script>
   </body>
 </html>
