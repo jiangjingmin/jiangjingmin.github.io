@@ -23,7 +23,7 @@
 			}
     </script>
     <link rel="icon" href="/favicon.ico"><title>性能优化 | 前端档案</title><meta name="description" content="前端通关宝典">
-    <link rel="modulepreload" href="/assets/app.8c5ff8f0.js"><link rel="modulepreload" href="/assets/index.html.4f249acb.js"><link rel="modulepreload" href="/assets/index.html.a25151b6.js">
+    <link rel="modulepreload" href="/assets/app.2989aa3c.js"><link rel="modulepreload" href="/assets/index.html.4f249acb.js"><link rel="modulepreload" href="/assets/index.html.d5d4bd7a.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -63,6 +63,6 @@ error_page 405 =200 http://$host:8085/$request_uri;
     rewrite ^(.*)$ /index.html last;
 }
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="开启-etag" tabindex="-1"><a class="header-anchor" href="#开启-etag" aria-hidden="true">#</a> 开启 Etag</h3><p>Etag 全称 EntityTags</p><p><img src="/assets/etag.94df64d7.jpg" alt="Etag"></p><p>Expires(HTTP/1.0)/Cache-Control(HTTP/1.1) Header 是控制浏览器是否直接从浏览器缓存取数据还是重新发请求到服务器取数据。</p><p>只是 Cache-Control 比 Expires 可以控制的多一些， 而且 Cache-Control 会重写 Expires 的规则。</p><p>Last-Modified/If-Modified-Since 和 ETag/If-None-Match 是浏览器发送请求到服务器后判断文件是否已经修改过，如果没有修改过就只发送一个 304 回给浏览器，告诉浏览器直接从自己本地的缓存取数据；如果修改过那就整个数据重新发给浏览器。</p><h3 id="项目中使用到的icon是如何处理的" tabindex="-1"><a class="header-anchor" href="#项目中使用到的icon是如何处理的" aria-hidden="true">#</a> 项目中使用到的icon是如何处理的？</h3><ol><li>本地图标（雪碧图）： 放大失真、需要计算图标位置、只能做背景图</li><li>iconfont 字体图标：矢量图放大不会失真、第三方支持丰富</li><li>svg 图标：可以直接替代img使用</li></ol><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: jingmin.jiang@cloudminds.com">jiangjingmin</span><!--[-->, <!--]--><!--]--><!--[--><span class="contributor" title="email: 1143480553@qq.com">kyxiao</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.8c5ff8f0.js" defer></script>
+    <script type="module" src="/assets/app.2989aa3c.js" defer></script>
   </body>
 </html>

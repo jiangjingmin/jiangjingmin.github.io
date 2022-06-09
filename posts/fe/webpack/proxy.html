@@ -23,7 +23,7 @@
 			}
     </script>
     <link rel="icon" href="/favicon.ico"><title>面试官：说说webpack proxy工作原理？为什么能解决跨域? | 前端档案</title><meta name="description" content="前端通关宝典">
-    <link rel="modulepreload" href="/assets/app.8c5ff8f0.js"><link rel="modulepreload" href="/assets/proxy.html.73d68e8e.js"><link rel="modulepreload" href="/assets/proxy.html.0226c945.js">
+    <link rel="modulepreload" href="/assets/app.2989aa3c.js"><link rel="modulepreload" href="/assets/proxy.html.73d68e8e.js"><link rel="modulepreload" href="/assets/proxy.html.cfc6b07f.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -54,6 +54,6 @@ app<span class="token punctuation">.</span><span class="token function">listen</
 
 <span class="token comment">// http://localhost:3000/api/foo/bar -&gt; http://www.example.org/api/foo/bar</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="三、跨域" tabindex="-1"><a class="header-anchor" href="#三、跨域" aria-hidden="true">#</a> 三、跨域</h2><p>在开发阶段， <code>webpack-dev-server</code> 会启动一个本地开发服务器，所以我们的应用在开发阶段是独立运行在 <code>localhost </code>的一个端口上，而后端服务又是运行在另外一个地址上</p><p>所以在开发阶段中，由于浏览器同源策略的原因，当本地访问后端就会出现跨域请求的问题</p><p>通过设置<code>webpack proxy</code>实现代理请求后，相当于浏览器与服务端中添加一个代理者</p><p>当本地发送请求的时候，代理服务器响应该请求，并将请求转发到目标服务器，目标服务器响应数据后再将数据返回给代理服务器，最终再由代理服务器将数据响应给本地</p><p><img src="https://static.vue-js.com/65b5e5c0-ace5-11eb-85f6-6fac77c0c9b3.png" alt=""></p><p>在代理服务器传递数据给本地浏览器的过程中，两者同源，并不存在跨域行为，这时候浏览器就能正常接收数据</p><p>注意：<strong>服务器与服务器之间请求数据并不会存在跨域行为，跨域行为是浏览器安全策略限制</strong></p><h2 id="参考文献" tabindex="-1"><a class="header-anchor" href="#参考文献" aria-hidden="true">#</a> 参考文献</h2><ul><li>https://webpack.docschina.org/configuration/dev-server/#devserverproxy</li></ul><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 1143480553@qq.com">kyxiao</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/posts/fe/webpack/Plugin.html" class="" aria-label="Plugin"><!--[--><!--]--> Plugin <!--[--><!--]--></a></span><span class="next"><a href="/posts/fe/webpack/publish.html" class="" aria-label="前端发布"><!--[--><!--]--> 前端发布 <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.8c5ff8f0.js" defer></script>
+    <script type="module" src="/assets/app.2989aa3c.js" defer></script>
   </body>
 </html>

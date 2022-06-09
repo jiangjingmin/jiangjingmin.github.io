@@ -23,7 +23,7 @@
 			}
     </script>
     <link rel="icon" href="/favicon.ico"><title>面试官：React中的key有什么作用？ | 前端档案</title><meta name="description" content="前端通关宝典">
-    <link rel="modulepreload" href="/assets/app.8c5ff8f0.js"><link rel="modulepreload" href="/assets/key.html.42f11354.js"><link rel="modulepreload" href="/assets/key.html.f5ff683d.js">
+    <link rel="modulepreload" href="/assets/app.2989aa3c.js"><link rel="modulepreload" href="/assets/key.html.42f11354.js"><link rel="modulepreload" href="/assets/key.html.bc822f24.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -82,6 +82,6 @@
   <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>当拥有<code>key</code>的时候，<code>react</code>根据<code>key</code>属性匹配原有树上的子元素以及最新树上的子元素，像上述情况只需要将000元素插入到最前面位置</p><p>当没有<code>key</code>的时候，所有的<code>li</code>标签都需要进行修改</p><p>同样，并不是拥有<code>key</code>值代表性能越高，如果说只是文本内容改变了，不写<code>key</code>反而性能和效率更高</p><p>主要是因为不写<code>key</code>是将所有的文本内容替换一下，节点不会发生变化</p><p>而写<code>key</code>则涉及到了节点的增和删，发现旧<code>key</code>不存在了，则将其删除，新<code>key</code>在之前没有，则插入，这就增加性能的开销</p><h2 id="三、总结" tabindex="-1"><a class="header-anchor" href="#三、总结" aria-hidden="true">#</a> 三、总结</h2><p>良好使用<code>key</code>属性是性能优化的非常关键的一步，注意事项为：</p><ul><li><p>key 应该是唯一的</p></li><li><p>key不要使用随机值（随机数在下一次 render 时，会重新生成一个数字）</p></li><li><p>使用 index 作为 key值，对性能没有优化</p></li></ul><p><code>react</code>判断<code>key</code>的流程具体如下图：</p><p><img src="https://static.vue-js.com/3b9afe10-dd69-11eb-ab90-d9ae814b240d.png" alt=""></p><h2 id="参考文献" tabindex="-1"><a class="header-anchor" href="#参考文献" aria-hidden="true">#</a> 参考文献</h2><ul><li>https://zh-hans.reactjs.org/docs/lists-and-keys.html#gatsby-focus-wrapper</li><li>https://segmentfault.com/a/1190000017511836</li></ul><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 1143480553@qq.com">kyxiao</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/posts/fe/react/jsx_to_dom.html" class="" aria-label="面试官：说说React Jsx转换成真实DOM过程？"><!--[--><!--]--> 面试官：说说React Jsx转换成真实DOM过程？ <!--[--><!--]--></a></span><span class="next"><a href="/posts/fe/react/lifecycle.html" class="" aria-label="面试官：说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？"><!--[--><!--]--> 面试官：说说 React 生命周期有哪些不同阶段？每个阶段对应的方法是？ <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.8c5ff8f0.js" defer></script>
+    <script type="module" src="/assets/app.2989aa3c.js" defer></script>
   </body>
 </html>

@@ -23,7 +23,7 @@
 			}
     </script>
     <link rel="icon" href="/favicon.ico"><title>面试官：说说对 Node 中的 process 的理解？有哪些常用方法？ | 前端档案</title><meta name="description" content="前端通关宝典">
-    <link rel="modulepreload" href="/assets/app.8c5ff8f0.js"><link rel="modulepreload" href="/assets/process.html.d76cd46e.js"><link rel="modulepreload" href="/assets/process.html.078d21bb.js">
+    <link rel="modulepreload" href="/assets/app.2989aa3c.js"><link rel="modulepreload" href="/assets/process.html.d76cd46e.js"><link rel="modulepreload" href="/assets/process.html.fc2b359a.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -37,6 +37,6 @@ console<span class="token punctuation">.</span><span class="token function">erro
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>输出结果为<code>bar</code>、<code>foo</code></p><p>虽然下述方式也能实现同样效果：</p><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token function">setTimeout</span><span class="token punctuation">(</span>foo<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&#39;bar&#39;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>两者区别在于：</p><ul><li>process.nextTick()会在这一次event loop的call stack清空后（下一次event loop开始前）再调用callback</li><li>setTimeout()是并不知道什么时候call stack清空的，所以何时调用callback函数是不确定的</li></ul><h3 id="参考文献" tabindex="-1"><a class="header-anchor" href="#参考文献" aria-hidden="true">#</a> 参考文献</h3><ul><li>http://nodejs.cn/api/process.html</li><li>https://vue3js.cn/interview/</li></ul><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 1143480553@qq.com">kyxiao</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/posts/fe/nodejs/performance.html" class="" aria-label="面试官：Node性能如何进行监控以及优化？"><!--[--><!--]--> 面试官：Node性能如何进行监控以及优化？ <!--[--><!--]--></a></span><span class="next"><a href="/posts/fe/nodejs/require_order.html" class="" aria-label="面试官：说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?"><!--[--><!--]--> 面试官：说说 Node 文件查找的优先级以及 Require 方法的文件查找策略? <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.8c5ff8f0.js" defer></script>
+    <script type="module" src="/assets/app.2989aa3c.js" defer></script>
   </body>
 </html>

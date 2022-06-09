@@ -23,7 +23,7 @@
 			}
     </script>
     <link rel="icon" href="/favicon.ico"><title>面试官：说说对Nodejs中的事件循环机制理解? | 前端档案</title><meta name="description" content="前端通关宝典">
-    <link rel="modulepreload" href="/assets/app.8c5ff8f0.js"><link rel="modulepreload" href="/assets/event_loop.html.ad82fc34.js"><link rel="modulepreload" href="/assets/event_loop.html.281ec7b9.js">
+    <link rel="modulepreload" href="/assets/app.2989aa3c.js"><link rel="modulepreload" href="/assets/event_loop.html.ad82fc34.js"><link rel="modulepreload" href="/assets/event_loop.html.f6a91a4e.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -92,6 +92,6 @@ setImmediate
 setImmediate
 setTimeout
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>分析下流程：</p><ul><li>外层同步代码一次性全部执行完，遇到异步API就塞到对应的阶段</li><li>遇到<code>setTimeout</code>，虽然设置的是0毫秒触发，但实际上会被强制改成1ms，时间到了然后塞入<code>times</code>阶段</li><li>遇到<code>setImmediate</code>塞入<code>check</code>阶段</li><li>同步代码执行完毕，进入Event Loop</li><li>先进入<code>times</code>阶段，检查当前时间过去了1毫秒没有，如果过了1毫秒，满足<code>setTimeout</code>条件，执行回调，如果没过1毫秒，跳过</li><li>跳过空的阶段，进入check阶段，执行<code>setImmediate</code>回调</li></ul><p>这里的关键在于这1ms，如果同步代码执行时间较长，进入<code>Event Loop</code>的时候1毫秒已经过了，<code>setTimeout</code>先执行，如果1毫秒还没到，就先执行了<code>setImmediate</code></p><h2 id="参考文献" tabindex="-1"><a class="header-anchor" href="#参考文献" aria-hidden="true">#</a> 参考文献</h2><ul><li>https://segmentfault.com/a/1190000012258592</li><li>https://juejin.cn/post/6844904100195205133</li><li>https://vue3js.cn/interview/</li></ul><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 1143480553@qq.com">kyxiao</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/posts/fe/nodejs/event_emitter.html" class="" aria-label="面试官：说说Node中的EventEmitter? 如何实现一个EventEmitter?"><!--[--><!--]--> 面试官：说说Node中的EventEmitter? 如何实现一个EventEmitter? <!--[--><!--]--></a></span><span class="next"><a href="/posts/fe/nodejs/file_upload.html" class="" aria-label="面试官：如何实现文件上传？说说你的思路"><!--[--><!--]--> 面试官：如何实现文件上传？说说你的思路 <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.8c5ff8f0.js" defer></script>
+    <script type="module" src="/assets/app.2989aa3c.js" defer></script>
   </body>
 </html>

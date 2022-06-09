@@ -23,7 +23,7 @@
 			}
     </script>
     <link rel="icon" href="/favicon.ico"><title>面试官：说说你对作用域链的理解 | 前端档案</title><meta name="description" content="前端通关宝典">
-    <link rel="modulepreload" href="/assets/app.8c5ff8f0.js"><link rel="modulepreload" href="/assets/scope.html.28358e06.js"><link rel="modulepreload" href="/assets/scope.html.419a5ea5.js">
+    <link rel="modulepreload" href="/assets/app.2989aa3c.js"><link rel="modulepreload" href="/assets/scope.html.28358e06.js"><link rel="modulepreload" href="/assets/scope.html.6aaa1433.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -79,6 +79,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token punctuation">}</span>
 <span class="token function">person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>上述代码主要主要做了以下工作：</p><ul><li><code>student</code>函数内部属于最内层作用域，找不到<code>name</code>，向上一层作用域<code>person</code>函数内部找，找到了输出“张三”</li><li><code>student</code>内部输出cat时找不到，向上一层作用域<code>person</code>函数找，还找不到继续向上一层找，即全局作用域，找到了输出“男”</li><li>在<code>person</code>函数内部输出<code>age</code>时找不到，向上一层作用域找，即全局作用域，还是找不到则报错</li></ul><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 1143480553@qq.com">kyxiao</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/posts/fe/javascript/regexp.html" class="" aria-label="面试官：说说你对正则表达式的理解？应用场景？"><!--[--><!--]--> 面试官：说说你对正则表达式的理解？应用场景？ <!--[--><!--]--></a></span><span class="next"><a href="/posts/fe/javascript/single_sign.html" class="" aria-label="面试官：什么是单点登录？如何实现？"><!--[--><!--]--> 面试官：什么是单点登录？如何实现？ <!--[--><!--]--></a></span></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.8c5ff8f0.js" defer></script>
+    <script type="module" src="/assets/app.2989aa3c.js" defer></script>
   </body>
 </html>
