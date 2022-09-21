@@ -1,0 +1,1 @@
+const t={key:"v-a06da378",path:"/posts/fe/react18/",title:"React 18",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1663323165e3,contributors:[{name:"jingmin.jiang",email:"jingmin.jiang@cloudminds.com",commits:1}]},filePathRelative:"posts/fe/react18/README.md"};export{t as data};
