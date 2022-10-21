@@ -1,0 +1,1 @@
+const t={key:"v-bbb5cc9a",path:"/posts/guide/FE-Interview-Questions/Handwritten-code.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1665657056e3,contributors:[{name:"jingmin.jiang",email:"jingmin.jiang@cloudminds.com",commits:1}]},filePathRelative:"posts/guide/FE-Interview-Questions/Handwritten-code.md"};export{t as data};

@@ -1,0 +1,1 @@
+const e={key:"v-335aa545",path:"/posts/guide/FE-Interview-Questions/MVVM.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"MVVM",slug:"mvvm",children:[]}],git:{updatedTime:1665657056e3,contributors:[{name:"jingmin.jiang",email:"jingmin.jiang@cloudminds.com",commits:1}]},filePathRelative:"posts/guide/FE-Interview-Questions/MVVM.md"};export{e as data};

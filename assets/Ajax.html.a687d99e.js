@@ -1,0 +1,1 @@
+const t={key:"v-25fc3db6",path:"/posts/guide/FE-Interview-Questions/Ajax.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1665657056e3,contributors:[{name:"jingmin.jiang",email:"jingmin.jiang@cloudminds.com",commits:1}]},filePathRelative:"posts/guide/FE-Interview-Questions/Ajax.md"};export{t as data};

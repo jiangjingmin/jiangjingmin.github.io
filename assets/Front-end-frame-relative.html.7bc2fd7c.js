@@ -1,0 +1,1 @@
+const e={key:"v-53bbda03",path:"/posts/guide/FE-Interview-Questions/Front-end-frame-relative.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1665657056e3,contributors:[{name:"jingmin.jiang",email:"jingmin.jiang@cloudminds.com",commits:1}]},filePathRelative:"posts/guide/FE-Interview-Questions/Front-end-frame-relative.md"};export{e as data};

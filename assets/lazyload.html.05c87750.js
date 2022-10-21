@@ -1,0 +1,1 @@
+const e={key:"v-47d5db1b",path:"/posts/fe/vue/lazyload.html",title:"Vue\u9879\u76EE\u4E2D\u5B9E\u73B0\u56FE\u7247\u61D2\u52A0\u8F7D",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1665657056e3,contributors:[{name:"jingmin.jiang",email:"jingmin.jiang@cloudminds.com",commits:1}]},filePathRelative:"posts/fe/vue/lazyload.md"};export{e as data};
