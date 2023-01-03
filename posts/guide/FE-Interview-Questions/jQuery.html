@@ -23,7 +23,7 @@
 			}
     </script>
     <link rel="icon" href="/favicon.ico"><title>前端档案</title><meta name="description" content="前端通关宝典">
-    <link rel="modulepreload" href="/assets/app.6e1280c8.js"><link rel="modulepreload" href="/assets/jQuery.html.8ffaef5a.js"><link rel="modulepreload" href="/assets/jQuery.html.c14263bd.js">
+    <link rel="modulepreload" href="/assets/app.77cde27d.js"><link rel="modulepreload" href="/assets/jQuery.html.8ffaef5a.js"><link rel="modulepreload" href="/assets/jQuery.html.b67fa1da.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -107,6 +107,6 @@ $(&quot;#email&quot;).alertValue();
       <span class="token literal-property property">click</span><span class="token operator">:</span> func3
   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>针对 jQuery 的优化方法？</strong></p><ul><li>缓存频繁操作DOM对象</li><li>尽量使用id选择器代替class选择器</li><li>总是从#id选择器来继承</li><li>尽量使用链式操作</li><li>使用时间委托 on 绑定事件</li><li>采用jQuery的内部函数data()来存储数据</li><li>使用最新版本的 jQuery</li></ul><p><strong>jQuery 的 slideUp 动画，当鼠标快速连续触发, 动画会滞后反复执行，该如何处理呢?</strong></p><ul><li>在触发元素上的事件设置为延迟处理：使用 JS 原生 setTimeout 方法</li><li>在触发元素的事件时预先停止所有的动画，再执行相应的动画事件：$(&#39;.tab&#39;).stop().slideUp();</li></ul><p><strong>jQuery UI 如何自定义组件？</strong></p><ul><li>通过向 $.widget() 传递组件名称和一个原型对象来完成</li><li><code>$.widget(&quot;ns.widgetName&quot;, [baseWidget], widgetPrototype);</code></li></ul><p><strong>jQuery 与 jQuery UI、jQuery Mobile 区别？</strong></p><ul><li><p>jQuery 是 JS 库，兼容各种PC浏览器，主要用作更方便地处理 DOM、事件、动画、AJAX</p></li><li><p>jQuery UI 是建立在 jQuery 库上的一组用户界面交互、特效、小部件及主题</p></li><li><p>jQuery Mobile 以 jQuery 为基础，用于创建“移动Web应用”的框架</p></li></ul><p><strong>jQuery 和 Zepto 的区别？ 各自的使用场景？</strong></p><ul><li>jQuery 主要目标是PC的网页中，兼容全部主流浏览器。在移动设备方面，单独推出 jQuery Mobile</li><li>Zepto 从一开始就定位移动设备，相对更轻量级。它的 API 基本兼容 jQuery，但对PC浏览器兼容不理想</li></ul><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: jingmin.jiang@cloudminds.com">jingmin.jiang</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.6e1280c8.js" defer></script>
+    <script type="module" src="/assets/app.77cde27d.js" defer></script>
   </body>
 </html>
