@@ -22,8 +22,8 @@
 				document.documentElement.classList.toggle('dark', true);
 			}
     </script>
-    <link rel="icon" href="/favicon.ico"><meta name="keyworks" content="档案馆,物流,北京到上海"><title>前端面试档案馆</title><meta name="description" content="Frontend 前端面试档案馆">
-    <link rel="modulepreload" href="/assets/app.f6b3af9d.js"><link rel="modulepreload" href="/assets/MVVM.html.59bb2945.js"><link rel="modulepreload" href="/assets/MVVM.html.12a62e71.js">
+    <link rel="icon" href="/favicon.ico"><meta name="keywords" content="前端,面试题,frontend"><title>前端面试档案馆</title><meta name="description" content="Frontend 前端面试档案馆">
+    <link rel="modulepreload" href="/assets/app.cec2e512.js"><link rel="modulepreload" href="/assets/MVVM.html.59bb2945.js"><link rel="modulepreload" href="/assets/MVVM.html.5c0af9e4.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -132,6 +132,6 @@ data<span class="token punctuation">.</span>name <span class="token operator">=<
   <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><blockquote><p>以上实现了一个简易的双向绑定，核心思路就是手动触发一次属性的 getter 来实现发布订阅的添加</p></blockquote><p><strong>Proxy 与 Obeject.defineProperty 对比</strong></p><ul><li><code>Obeject.defineProperty</code> 虽然已经能够实现双向绑定了，但是他还是有缺陷的。 <ul><li>只能对属性进行数据劫持，所以需要深度遍历整个对象</li><li>对于数组不能监听到数据的变化</li></ul></li></ul><blockquote><p>虽然 <code>Vue</code> 中确实能检测到数组数据的变化，但是其实是使用了 <code>hack</code> 的办法，并且也是有缺陷的</p></blockquote><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: jingmin.jiang@cloudminds.com">jingmin.jiang</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.f6b3af9d.js" defer></script>
+    <script type="module" src="/assets/app.cec2e512.js" defer></script>
   </body>
 </html>

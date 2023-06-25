@@ -22,8 +22,8 @@
 				document.documentElement.classList.toggle('dark', true);
 			}
     </script>
-    <link rel="icon" href="/favicon.ico"><meta name="keyworks" content="档案馆,物流,北京到上海"><title>前端面试档案馆</title><meta name="description" content="Frontend 前端面试档案馆">
-    <link rel="modulepreload" href="/assets/app.f6b3af9d.js"><link rel="modulepreload" href="/assets/CSS.html.0eb7c216.js"><link rel="modulepreload" href="/assets/CSS.html.304b18e3.js">
+    <link rel="icon" href="/favicon.ico"><meta name="keywords" content="前端,面试题,frontend"><title>前端面试档案馆</title><meta name="description" content="Frontend 前端面试档案馆">
+    <link rel="modulepreload" href="/assets/app.cec2e512.js"><link rel="modulepreload" href="/assets/CSS.html.0eb7c216.js"><link rel="modulepreload" href="/assets/CSS.html.7fa35265.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -235,6 +235,6 @@ p:first-child {color: red}
   <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>让页面里的字体变清晰，变细用CSS怎么做？（IOS手机浏览器字体齿轮设置）</strong></p><div class="language-css ext-css line-numbers-mode"><pre class="language-css"><code>  <span class="token property">-webkit-font-smoothing</span><span class="token punctuation">:</span> antialiased<span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br></div></div><p><strong>font-style 属性 oblique 是什么意思？</strong></p><ul><li>font-style: oblique; 使没有 italic 属性的文字实现倾斜</li></ul><p><strong>如果需要手动写动画，你认为最小时间间隔是多久？</strong></p><ul><li>16.7ms 多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔: 1s / 60 * 1000 ＝ 16.7ms</li></ul><p><strong>display:inline-block 什么时候会显示间隙？</strong></p><ul><li>相邻的 inline-block 元素之间有换行或空格分隔的情况下会产生间距</li><li>非 inline-block 水平元素设置为 inline-block 也会有水平间距</li><li>可以借助 vertical-align:top; 消除垂直间隙</li><li>可以在父级加 font-size：0; 在子元素里设置需要的字体大小，消除垂直间隙</li><li>把 li 标签写到同一行可以消除垂直间隙，但代码可读性差</li></ul><p><strong>overflow: scroll 时不能平滑滚动的问题怎么处理？</strong></p><ul><li>监听滚轮事件，然后滚动到一定距离时用 jquery 的 animate 实现平滑效果。</li></ul><p><strong>一个高度自适应的div，里面有两个div，一个高度100px，希望另一个填满剩下的高度</strong></p><ul><li>方案1： <code>.sub { height: calc(100%-100px); }</code></li><li>方案2： <code>.container { position:relative; }</code><code>.sub { position: absolute; top: 100px; bottom: 0; }</code></li><li>方案3： <code>.container { display:flex; flex-direction:column; }</code><code>.sub { flex:1; }</code></li></ul><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: jingmin.jiang@cloudminds.com">jingmin.jiang</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.f6b3af9d.js" defer></script>
+    <script type="module" src="/assets/app.cec2e512.js" defer></script>
   </body>
 </html>

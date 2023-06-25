@@ -22,8 +22,8 @@
 				document.documentElement.classList.toggle('dark', true);
 			}
     </script>
-    <link rel="icon" href="/favicon.ico"><meta name="keyworks" content="档案馆,物流,北京到上海"><title>前端面试档案馆</title><meta name="description" content="Frontend 前端面试档案馆">
-    <link rel="modulepreload" href="/assets/app.f6b3af9d.js"><link rel="modulepreload" href="/assets/CSS盒模型及BFC.html.c09f2ce3.js"><link rel="modulepreload" href="/assets/CSS盒模型及BFC.html.2e930848.js">
+    <link rel="icon" href="/favicon.ico"><meta name="keywords" content="前端,面试题,frontend"><title>前端面试档案馆</title><meta name="description" content="Frontend 前端面试档案馆">
+    <link rel="modulepreload" href="/assets/app.cec2e512.js"><link rel="modulepreload" href="/assets/CSS盒模型及BFC.html.c09f2ce3.js"><link rel="modulepreload" href="/assets/CSS盒模型及BFC.html.3f4a1061.js">
     <link rel="stylesheet" href="/assets/style.39d5bbe5.css">
   </head>
   <body>
@@ -155,6 +155,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>效果如下：</p><p><img src="https://gitee.com/jiangjingmin/picbed/raw/master/kyxiao/interview/20180306_0840.png" alt="image"></p><p>上面的代码中，儿子浮动了，但由于父亲没有设置高度，导致看不到父亲的背景色（此时父亲的高度为0）。正所谓<strong>有高度的盒子，才能关住浮动</strong>。</p><blockquote><p>如果想要清除浮动带来的影响，方法一是给父亲设置高度，然后采用隔墙法。方法二是 BFC：给父亲增加 <code>overflow=hidden</code>属性即可， 增加之后，效果如下：</p></blockquote><p><img src="https://gitee.com/jiangjingmin/picbed/raw/master/kyxiao/interview/20180306_0845.png" alt="image"></p><blockquote><p>为什么父元素成为BFC之后，就有了高度呢？这就回到了<strong>第四条：计算BFC的高度时，浮动元素也参与计算</strong>。意思是，<strong>在计算BFC的高度时，子元素的float box也会参与计算</strong></p></blockquote><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">上次更新: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: jingmin.jiang@cloudminds.com">jingmin.jiang</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.f6b3af9d.js" defer></script>
+    <script type="module" src="/assets/app.cec2e512.js" defer></script>
   </body>
 </html>
